@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="About AquaSense – Engineering exhibition documentation detailing objectives, problem statement, benefits, working principle, and future scope of the water monitoring system."/>
+  <title>About Project – AquaSense Smart Water Monitor</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ============================================================
+     LOADING SCREEN
+============================================================ -->
+<div id="loading-screen">
+  <div class="droplet-loader"></div>
+  <div class="loader-logo">AquaSense</div>
+  <div class="loader-subtitle">Telemetry Link Active</div>
+</div>
+
+<!-- ============================================================
+     BACK TO TOP
+============================================================ -->
+<button id="backToTop" title="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <i class="bi bi-water"></i>
+      <div class="brand-sub">
+        <span class="brand-name">AquaSense</span>
+        <span class="brand-tagline">Borewell &amp; Water Monitor</span>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html"><i class="bi bi-info-circle me-1"></i>About</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html"><i class="bi bi-speedometer2 me-1"></i>Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="nav-link nav-cta" href="dashboard.html">
+            <i class="bi bi-activity me-1"></i>Live Data
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     PAGE HERO
+============================================================ -->
+<section class="page-hero" style="background: linear-gradient(135deg, #EAF7FF 0%, #F5F7FA 100%);">
+  <div class="container">
+    
+    <h1 class="page-hero-title">About the <span>Project</span></h1>
+    
+    <div class="breadcrumb-wrap">
+      <a href="index.html">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.7rem;"></i>
+      <span>About Project</span>
+    </div>
+  </div>
+</section>
+<!-- ABOUT AQUASENSE -->
+<section class="section-py bg-white-section">
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-6">
+<img src="images/borewell.jpeg"
+class="img-fluid rounded-4 shadow-lg"
+alt="AquaSense Project">
+</div>
+
+<div class="col-lg-6">
+
+<span class="section-tag">About AquaSense</span>
+
+<h2 class="section-title">
+Smart Borewell Monitoring System
+</h2>
+
+<p>
+AquaSense is an IoT-based Smart Borewell Monitoring System developed to monitor groundwater resources in real time.
+The system integrates ESP32 technology, cloud storage, and multiple water quality sensors to provide continuous monitoring and intelligent decision-making.
+</p>
+
+<div class="row mt-4">
+
+<div class="col-6">
+<div class="card-clean p-3 text-center">
+<h3>5</h3>
+<p>Sensors</p>
+</div>
+</div>
+
+<div class="col-6">
+<div class="card-clean p-3 text-center">
+<h3>24/7</h3>
+<p>Monitoring</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<section class="section-py bg-alt-section">
+<div class="container">
+
+<div class="text-center mb-5">
+<span class="section-tag">Sensors</span>
+<h2 class="section-title">Smart Sensors Used</h2>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card-clean p-4">
+<h5>💧 Water Level Sensor</h5>
+<p>Measures groundwater level.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card-clean p-4">
+<h5>🌊 Flow Sensor</h5>
+<p>Measures water flow rate.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card-clean p-4">
+<h5>🌡 Temperature Sensor</h5>
+<p>Monitors water temperature.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card-clean p-4">
+<h5>🧪 TDS Sensor</h5>
+<p>Measures dissolved solids.</p>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="card-clean p-4">
+<h5>🔍 Turbidity Sensor</h5>
+<p>Measures water clarity.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ============================================================
+     WORKING PRINCIPLE & ARCHITECTURE
+============================================================ -->
+<section class="section-py bg-alt-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-tag">Working Principle</span>
+      <h2 class="section-title">System <span>Architecture</span></h2>
+      <div class="section-divider center"></div>
+      <p class="section-subtitle">A simple multi-layered process pipeline from physical water wells to client browser views.</p>
+    </div>
+    
+    <div class="row align-items-center g-5">
+      <!-- Left: Diagram Summary -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <h4 style="font-weight:800;color:var(--text);margin-bottom:1.2rem;">Data Processing Workflow</h4>
+        <p>
+          The system starts at the <strong>Borewell Casing Cap</strong>, where the HC-SR04 ultrasonic level sensor is positioned downwards. When triggered by the ESP32 microcontroller, it fires sound waves and records echo flight time. Simultaneously, spinner ticks on the flow sensor are gathered.
+        </p>
+        <p>
+          Water purity details are recorded using the submerged <strong>TDS Probe</strong> (calculating conductivity) and the <strong>Turbidity Light Sensor</strong>. These inputs are aggregated by the ESP32 microcontroller, converted to digital metrics, and pushed to <strong>ThingSpeak IoT channel</strong> via HTTP JSON requests.
+        </p>
+        <p>
+          Finally, the client-side JavaScript dashboard polls the ThingSpeak REST API endpoints every 15 seconds to animate circular gauges, redraw line trends, and check thresholds to trigger alerts.
+        </p>
+      </div>
+      <!-- Right: Benefits Grid -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <h4 style="font-weight:800;color:var(--text);margin-bottom:1.2rem;">Key Project Benefits</h4>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <div class="card-clean p-3">
+              <i class="bi bi-shield-fill-check text-success" style="font-size:1.5rem;display:block;margin-bottom:0.4rem;"></i>
+              <h6 style="font-weight:700;">Equipment Safety</h6>
+              <small class="text-muted">Turns off pumps automatically on critical water table collapses.</small>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card-clean p-3">
+              <i class="bi bi-heart-pulse-fill text-danger" style="font-size:1.5rem;display:block;margin-bottom:0.4rem;"></i>
+              <h6 style="font-weight:700;">Purity Assurance</h6>
+              <small class="text-muted">Flags high sediment concentrations or heavy chemical TDS ppm indexes.</small>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card-clean p-3">
+              <i class="bi bi-clock-fill text-primary" style="font-size:1.5rem;display:block;margin-bottom:0.4rem;"></i>
+              <h6 style="font-weight:700;">Zero Log Gaps</h6>
+              <small class="text-muted">Captures full historical water trends over long irrigation months.</small>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card-clean p-3">
+              <i class="bi bi-currency-dollar text-warning" style="font-size:1.5rem;display:block;margin-bottom:0.4rem;"></i>
+              <h6 style="font-weight:700;">Low Setup Costs</h6>
+              <small class="text-muted">Uses open-source boards and standard calibrator probes.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TECHNOLOGY STACK
+============================================================ -->
+<section class="section-py bg-white-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-tag">Specifications</span>
+      <h2 class="section-title">Technology <span>Stack</span></h2>
+      <div class="section-divider center"></div>
+      <p class="section-subtitle">Core components utilized to deploy hardware and software operations.</p>
+    </div>
+    
+    <div class="row g-4 justify-content-center text-center" data-aos="fade-up">
+      <div class="col-6 col-md-3">
+        <div class="card-clean p-4 h-100">
+          <div style="font-size:2.5rem;margin-bottom:0.6rem;">⚙️</div>
+          <h6 style="font-weight:700;">ESP32 Node</h6>
+          <p class="text-muted" style="font-size:0.78rem;margin:0;">Dual-core controller with built-in Wi-Fi and analog interfaces.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card-clean p-4 h-100">
+          <div style="font-size:2.5rem;margin-bottom:0.6rem;">☁️</div>
+          <h6 style="font-weight:700;">ThingSpeak</h6>
+          <p class="text-muted" style="font-size:0.78rem;margin:0;">Cloud database providing secure REST API JSON retrieval endpoints.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card-clean p-4 h-100">
+          <div style="font-size:2.5rem;margin-bottom:0.6rem;">📊</div>
+          <h6 style="font-weight:700;">Chart.js</h6>
+          <p class="text-muted" style="font-size:0.78rem;margin:0;">Enables smooth drawing of coordinate level graphs and grid lines.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="card-clean p-4 h-100">
+          <div style="font-size:2.5rem;margin-bottom:0.6rem;">🌐</div>
+          <h6 style="font-weight:700;">Bootstrap &amp; jQuery</h6>
+          <p class="text-muted" style="font-size:0.78rem;margin:0;">Keeps layouts responsive and handles AJAX data calls.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-py bg-alt-section">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="section-tag">Our Team</span>
+      <h2 class="section-title">Meet The <span>Team</span></h2>
+      <div class="section-divider center"></div>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="card-clean p-4 text-center">
+          <img src="images/member1.png" class="rounded-circle mb-3"
+               width="120" height="120">
+          <h5>Tejasvi Adhau</h5>
+          <p class="text-primary">Full Stack Software Developer</p>
+          <small>Leads project planning and development while designing the monitoring dashboard, database, and user interface.</small>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-clean p-4 text-center">
+          <img src="images/member2.png" class="rounded-circle mb-3"
+               width="120" height="120">
+          <h5>Aditya Yadav</h5>
+          <p class="text-primary">Embedded Systems Engineer</p>
+          <small>Handles ESP32 programming, firmware development, sensor communication, and real-time data processing.</small>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-clean p-4 text-center">
+          <img src="images/member3.jpeg" class="rounded-circle mb-3"
+               width="120" height="120">
+          <h5>Aditi Baldua</h5>
+          <p class="text-primary">Hardware Integration Engineer</p>
+          <small>Responsible for sensor interfacing, circuit connections, ESP32 hardware setup, and system assembly.</small>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card-clean p-4 text-center">
+          <img src="images/image.png" class="rounded-circle mb-3"
+               width="120" height="120">
+          <h5>Adhiraj Shirsode</h5>
+          <p class="text-primary">Hardware & Testing Engineer</p>
+          <small>Manages relay, pump, and sensor integration, performs system testing, troubleshooting, and performance validation.</small>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ============================================================
+     FUTURE SCOPE
+============================================================ -->
+<section class="section-py bg-alt-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Image -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="card-clean p-1" style="border-radius: var(--radius-xl); overflow: hidden;">
+          <img src="images/hero_water.png" alt="Futuristic Water Grid Illustration" class="w-100" style="border-radius: var(--radius-xl);"/>
+        </div>
+      </div>
+      <!-- Scope content -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="section-tag">Next Steps</span>
+        <h2 class="section-title">Future <span>Scope</span></h2>
+        <div class="section-divider"></div>
+        <p>The AquaSense monitoring prototype can be further scaled to include advanced environmental functions:</p>
+        
+        <div class="d-flex gap-3 align-items-start mb-3">
+          <div style="width:24px;height:24px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;flex-shrink:0;margin-top:2px;">A</div>
+          <div>
+            <h6 style="font-weight:700;margin-bottom:0.15rem;">Solar-Powered Operations</h6>
+            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Equip hardware boxes with mini solar arrays and Li-Po charging circuits to sustain operations in off-grid agricultural fields.</p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 align-items-start mb-3">
+          <div style="width:24px;height:24px;border-radius:50%;background:var(--blue-light);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;flex-shrink:0;margin-top:2px;">B</div>
+          <div>
+            <h6 style="font-weight:700;margin-bottom:0.15rem;">Automated Valve Controls</h6>
+            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Connect solid-state relay shields to the ESP32, allowing remote or automatic shutoffs of water mainlines when contamination is flagged.</p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 align-items-start">
+          <div style="width:24px;height:24px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;flex-shrink:0;margin-top:2px;">C</div>
+          <div>
+            <h6 style="font-weight:700;margin-bottom:0.15rem;">Machine Learning Predictions</h6>
+            <p style="font-size:0.85rem;color:var(--text-muted);margin:0;">Integrate predictive analytics algorithms to forecast borewell levels based on local rainfall cycles and historical drawdowns.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<div class="footer-wave-container">
+  <svg class="footer-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+      <path id="gentle-wave-f" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+    </defs>
+    <g class="footer-parallax">
+      <use href="#gentle-wave-f" x="48" y="0" />
+      <use href="#gentle-wave-f" x="48" y="3" />
+      <use href="#gentle-wave-f" x="48" y="5" />
+      <use href="#gentle-wave-f" x="48" y="7" />
+    </g>
+  </svg>
+</div>
+<footer style="background: #1B2F3E; padding: 3rem 0 0;">
+  <div class="container text-white">
+    <div class="row g-4" style="margin-bottom: 2rem;">
+      <div class="col-lg-4 text-white-50">
+        <div class="footer-brand text-white" style="font-weight: 800; font-size: 1.4rem; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;"><i class="bi bi-water text-info"></i>AquaSense</div>
+        <p style="font-size:0.85rem;line-height:1.7;">An IoT groundwater telemetry system developed with ESP32 microcontrollers and high-accuracy probes to map water level drawdowns and verify mineral values.</p>
+        <div class="social-links d-flex gap-2 mt-3">
+          <a href="#" class="social-btn" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff;"><i class="bi bi-github"></i></a>
+          <a href="#" class="social-btn" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff;"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-btn" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff;"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <h6 class="footer-heading text-white-50" style="font-size:0.8rem;letter-spacing:1px;font-weight:700;text-transform:uppercase;margin-bottom:1.2rem;">Quick Links</h6>
+        <ul class="footer-links" style="list-style:none;padding:0;">
+          <li style="margin-bottom:0.5rem;"><a href="index.html" style="color:#B0BEC5;font-size:0.85rem;"><i class="bi bi-chevron-right me-1" style="font-size:0.7rem;"></i>Home</a></li>
+          <li style="margin-bottom:0.5rem;"><a href="about.html" style="color:#B0BEC5;font-size:0.85rem;"><i class="bi bi-chevron-right me-1" style="font-size:0.7rem;"></i>About Project</a></li>
+          <li style="margin-bottom:0.5rem;"><a href="dashboard.html" style="color:#B0BEC5;font-size:0.85rem;"><i class="bi bi-chevron-right me-1" style="font-size:0.7rem;"></i>Dashboard</a></li>
+          <li style="margin-bottom:0.5rem;"><a href="contact.html" style="color:#B0BEC5;font-size:0.85rem;"><i class="bi bi-chevron-right me-1" style="font-size:0.7rem;"></i>Contact Team</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h6 class="footer-heading text-white-50" style="font-size:0.8rem;letter-spacing:1px;font-weight:700;text-transform:uppercase;margin-bottom:1.2rem;">Telemetry Metrics</h6>
+        <ul class="footer-links" style="list-style:none;padding:0;">
+          <li style="margin-bottom:0.5rem;"><a href="dashboard.html" style="color:#B0BEC5;font-size:0.85rem;"><i class="bi bi-chevron-right me-1" style="font-size:0.7rem;"></i>Borewell Depth</a></li>
+          <li style="margin-bottom:0.5rem;"><a href="dashboard.html" style="color:#B0BEC5;font-size:0.85rem;"><i class="bi bi-chevron-right me-1" style="font-size:0.7rem;"></i>Extraction Flow Rate</a></li>
+          <li style="margin-bottom:0.5rem;"><a href="dashboard.html" style="color:#B0BEC5;font-size:0.85rem;"><i class="bi bi-chevron-right me-1" style="font-size:0.7rem;"></i>TDS Mineral Count</a></li>
+          <li style="margin-bottom:0.5rem;"><a href="dashboard.html" style="color:#B0BEC5;font-size:0.85rem;"><i class="bi bi-chevron-right me-1" style="font-size:0.7rem;"></i>Turbidity &amp; Clarity</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 text-white-50">
+        <h6 class="footer-heading text-white-50" style="font-size:0.8rem;letter-spacing:1px;font-weight:700;text-transform:uppercase;margin-bottom:1.2rem;">Contact Details</h6>
+        <div style="font-size:0.82rem;margin-bottom:0.8rem;"><i class="bi bi-geo-alt me-2 text-info"></i>Vishwakarm Institute of Technology,Pune</div>
+        <div style="font-size:0.82rem;margin-bottom:0.8rem;"><i class="bi bi-envelope me-2 text-info"></i>contact@aquasense-telemetry.org</div>
+        <div style="font-size:0.82rem;margin-bottom:0.8rem;"><i class="bi bi-telephone me-2 text-info"></i>+91 11 2659 1000</div>
+      </div>
+    </div>
+    
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
